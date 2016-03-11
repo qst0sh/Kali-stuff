@@ -25,3 +25,9 @@ drwxr-xr-x   2 root root   4096 Feb  1 10:26 pyOpenSSL-0.15.1.egg-info
 /usr/lib/python2.7/dist-packages# rm -rf OpenSSL
 /usr/lib/python2.7/dist-packages# rm -rf pyOpenSSL-0.15.1.egg-info
 ```
+
+```
+# ./autogen.sh 
+./autogen.sh: 2: ./autogen.sh: autoreconf: not found
+# apt-get install autoconf
+```
