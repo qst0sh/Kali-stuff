@@ -31,3 +31,14 @@ drwxr-xr-x   2 root root   4096 Feb  1 10:26 pyOpenSSL-0.15.1.egg-info
 ./autogen.sh: 2: ./autogen.sh: autoreconf: not found
 # apt-get install autoconf
 ```
+
+#JAVA
+Download from oracle, unapack to /opt link /opt/jdk and:
+```
+update-alternatives --install /usr/bin/java java /opt/jdk/bin/java 1
+update-alternatives --install /usr/bin/javac javac /opt/jdk/bin/javac 1
+update-alternatives --install /usr/lib/mozilla/plugins/libjavaplugin.so mozilla-javaplugin.so /opt/jdk/jre/lib/amd64/libnpjp2.so 1
+update-alternatives --set java /opt/jdk/bin/java
+update-alternatives --set javac /opt/jdk/bin/javac
+update-alternatives --set mozilla-javaplugin.so /opt/jdk/jre/lib/amd64/libnpjp2.so
+```
